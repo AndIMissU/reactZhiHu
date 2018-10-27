@@ -18,13 +18,13 @@
       color: #8590a6;
       cursor: pointer;
       user-select: none;
-  
+
       .country-list {
         overflow: scroll;
-        z-index: 203;
+        z-index: 100;
         position: absolute;
-        top: 0;
-        left: -16px;
+        top: -50px;
+        left: -12px;
         border: 1px solid #ebebeb;
         box-shadow: 0 5px 20px rgba(26,26,26,.1);
         padding: 8px 0;
@@ -42,6 +42,17 @@
             background-color: #f6f6f6;
           }
         }
+      }
+
+      .country-list-mask {
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+        cursor: default;
       }
   
       &::before,

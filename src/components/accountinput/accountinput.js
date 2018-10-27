@@ -107,14 +107,23 @@ class accountInut extends Component {
       currentCountryCode: _currentCountryCode
     })
   }
+  // 隐藏国家列表
+  hideCountryList = ()=>{
+    this.setState({
+      showCountryList: false
+    })
+  }
   // 渲染国家列表信息
   countryList = ()=>{
     return (
-      <ul className='country-list' onClick={this.chooseCountry}>
-        {COUNTRY_LIST.map((country, index) => (
-          <li key={index}>{country}</li>
-        ))}
-      </ul>
+      <div>
+        <ul className='country-list' onClick={this.chooseCountry}>
+          {COUNTRY_LIST.map((country, index) => (
+            <li key={index}>{country}</li>
+          ))}
+        </ul>
+        <div className="country-list-mask" onClick={this.hideCountryList}></div>
+      </div>
     )
   }
 

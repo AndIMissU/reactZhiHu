@@ -53,14 +53,9 @@ class Sign extends Component {
       currentDownload: this.state.currentDownload === SHOW? CLOSE : SHOW
     })
   }
-  // 关闭国家列表
-  closeCountryList = (e)=>{
-    console.log(e.target.className)
-    
-  }
   render() {
     return (
-      <div className='sign' onClick={this.closeCountryList}>
+      <div className='sign'>
         <div className='sign-wrap'>
           <div className='container'>
             <div className='header'>
