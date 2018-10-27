@@ -1,0 +1,125 @@
+.sign {
+  overflow: scroll;
+  min-width: 1200px;
+  height: 100vh;
+  background: #b8e5f8 
+    url('https://static.zhihu.com/heifetz/sign_bg.db29b0fbd2f78dd8c1b7.png') 
+    no-repeat;
+  background-size: cover;
+
+  .sign-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 42px);
+
+    .container {
+      width: 432px;
+      background-color: #fff;
+
+      .header {
+        padding-top: 30px;
+        text-align: center;
+
+        p {
+          margin-top: 12px;
+          font-size: 22px;
+          color: #0084ff;
+        }
+      }
+
+      .body {
+        position: relative;
+
+        .info-tip {
+          border-top: 1px solid #ebebeb;
+          height: 58px;
+          font-size: 16px;
+          line-height: 58px;
+          text-align: center;
+          background-color: #f6f6f6;
+    
+          span {
+            color: #175199;
+            cursor: pointer;
+          }
+        }
+
+        .download-code {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-radius: 2px;
+          width: 100%;
+          height: calc(100% - 8px);
+          box-shadow: 0 0 8px 0 rgba(26,26,26,.15);
+          background: #fff 
+            url(https://www.zhihu.com/static/revved/img/index/qr-code@2x.2607d448.png) 
+            no-repeat 
+            center;
+          background-size: 250px 250px;
+          transition: opacity .3s, height .3s;
+        }
+    
+        .close-download-code {
+          bottom: 0;
+          height: 0;
+          opacity: 0;
+        }
+      }
+    }
+
+    .download-btn {
+      margin: 30px auto 0;
+      border: none;
+      width: 432px;
+      height: 42px;
+      outline: none;
+      font-size: 14px;
+      color: #fff;
+      background-color: #8590a6;
+      cursor: pointer;
+    }
+  }
+
+  .footer {
+    height: 120px;
+    line-height: 21px;
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 0 1px 2px #999;
+    color: #fff;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      padding: 0 5px;
+    }
+
+    .model-company {
+      position: relative;
+      margin: 10px auto;
+      border-top: 1px solid #ebebeb;
+      width: 420px;
+
+      img {
+        margin-top: 10px;          
+        width: 138px;
+      }
+
+      a {
+        position: absolute;
+        top: 12px;
+        left: 175px;
+      }
+    }
+  }
+}

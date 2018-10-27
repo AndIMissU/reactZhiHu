@@ -1,0 +1,103 @@
+.verification-code {
+  position: relative;
+  margin-top: 12px;
+  border-bottom: 1px solid #ebebeb;
+  height: 48px;
+
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+  }
+
+  p {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    font-size: 14px;
+    color: #175199;
+    cursor: pointer;
+
+    &:hover {
+      color: gray;
+    }
+
+    &.timer-count-down {
+      color: #8590a6;
+      cursor: default;
+    }
+  }
+
+  
+
+  &.no-verfication-code-useMessage::before,
+  &.no-verfication-code-useVoice::before {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #f1403c;
+    background-color: #fff;
+    cursor: text;
+  }
+
+  &.no-verfication-code-useMessage::before {
+    content: "请输入短信验证码";
+  }
+
+  &.no-verfication-code-useVoice::before {
+    content: "请输入语音验证码";
+  }
+
+  &.invalid-vertification-code::after {
+    content: "验证码填写错误";
+    position: absolute;
+    top: 13px;
+    left: 90px;
+    width: 126px;
+    box-shadow: -15px 0 10px #fff;
+    font-size: 14px;
+    color: #f1403c;
+    background-color: #fff;
+    cursor: text;
+  }
+}
+
+.not-send-verification-code {
+  margin: 12px 0 0 250px;
+  height: 20px;
+  line-height: 20px;
+  color: #8590a6;
+  font-size: 14px;
+  text-align: right;
+  cursor: pointer;
+  user-select: none;
+  transition: height .5s, opacity .5s, margin .5s;
+
+  &:hover {
+    color: gray;
+  }
+
+  &.sent-verfication-code {
+    margin: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.change-login-method {
+  float: left;
+  margin-top: 12px;
+  height: 20px;
+  line-height: 20px;
+  color: #175199;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    color: #8590a6;
+  }
+}

@@ -1,0 +1,38 @@
+.qr-code-wrap {
+  padding: 35px 40px 0;
+
+  .content {
+    margin-bottom: 30px;
+    text-align: center;
+
+    img {
+      padding-bottom: 15px;
+      width: 150px;
+      height: 150px;
+    }
+
+    p {
+      line-height: 22px;
+      font-size: 14px;
+      color: #1a1a1a;
+
+      a {
+        text-decoration: none;
+        color: #175199;
+      }
+    }
+  }
+
+  .to-use-password {
+    border-top: 1px solid #ebebeb;
+    padding: 14px 0;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #175199;
+
+    span {
+      cursor: pointer;
+    }
+  }
+}
